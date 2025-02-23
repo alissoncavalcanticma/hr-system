@@ -25,7 +25,8 @@ public class Main implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 
 		userRepository.saveAll(List.of(
-				new User(null,"Alisson","alisson@gmail.com", "123", 23.20)
+				new User(null,"Alisson","alisson@gmail.com", "123", 23.20),
+				new User(null,"Christian","ct@gmail.com", "123", 25.31)
 		));
 
 	}
