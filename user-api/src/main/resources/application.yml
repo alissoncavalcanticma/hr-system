@@ -16,4 +16,4 @@ spring:
       path: /h2
       enabled: true
 server:
-    port: 8000
+    port: ${PORT:8000}
