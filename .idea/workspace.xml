@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="331e42b6-3358-4be4-bba5-c69b8a423e2f" name="Changes" comment="Handling ObjectNotFound Exception implementation" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;alissoncavalcanticma&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/alissoncavalcanticma/hr-system.git&quot;,
+    &quot;accountId&quot;: &quot;0847aee2-7a40-4179-adb8-f2789f7e0b97&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2tNgzwJ3EgMfPKsOFfIXltbLOy7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Debug",
+    "Application.UserAPI8000.executor": "Run",
+    "Application.UserAPI8001.executor": "Run",
+    "Maven.user-api [clean].executor": "Run",
+    "Maven.user-api [compile].executor": "Run",
+    "Maven.user-api [install].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "dev",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/alisson.galvao/Documents/ALISSON (PESSOAL)/Cursos e Treinamentos/Cursos - Valdir César/Microserviços Java do zero/hr-system/user-api",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="UserAPI8000" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="zulu-17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="br.com.ctfera.user_api.Main" />
+      <module name="user-api" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/user-api/src/main/java/br/com/ctfera/user_api" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserAPI8001" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="zulu-17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <envs>
+        <env name="PORT" value="8001" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="br.com.ctfera.user_api.Main" />
+      <module name="user-api" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/user-api/src/main/java/br/com/ctfera/user_api" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.UserAPI8000" />
+      <item itemvalue="Application.UserAPI8001" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="331e42b6-3358-4be4-bba5-c69b8a423e2f" name="Changes" comment="" />
+      <created>1740198211429</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1740198211429</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Service and Resource implementation">
+      <option name="closed" value="true" />
+      <created>1740289949985</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1740289949985</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Handling ObjectNotFound Exception implementation">
+      <option name="closed" value="true" />
+      <created>1740340712752</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1740340712752</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Service and Resource implementation" />
+    <MESSAGE value="Handling ObjectNotFound Exception implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Handling ObjectNotFound Exception implementation" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/user-api/src/main/java/br/com/ctfera/user_api/resources/UserResource.java</url>
+          <line>12</line>
+          <properties class="br.com.ctfera.user_api.resources.UserResource" method="findById">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/user-api/src/main/java/br/com/ctfera/user_api/resources/UserResource.java</url>
+          <line>15</line>
+          <properties class="br.com.ctfera.user_api.resources.UserResource" method="findAll">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/user-api/src/main/java/br/com/ctfera/user_api/services/exceptions/ObjectNotFoundException.java</url>
+          <line>4</line>
+          <properties class="br.com.ctfera.user_api.services.exceptions.ObjectNotFoundException" method="&lt;init&gt;">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/user-api/src/main/java/br/com/ctfera/user_api/resources/exceptions/ResourceExceptionHandler.java</url>
+          <line>15</line>
+          <properties class="br.com.ctfera.user_api.resources.exceptions.ResourceExceptionHandler" method="objectNotFound">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/user-api/src/main/java/br/com/ctfera/user_api/services/impl/UserServiceImpl.java</url>
+          <line>26</line>
+          <properties class="br.com.ctfera.user_api.services.impl.UserServiceImpl" method="findById">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/user-api/src/main/java/br/com/ctfera/user_api/resources/UserResource.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/user-api/src/main/java/br/com/ctfera/user_api/resources/UserResource.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/user-api/src/main/java/br/com/ctfera/user_api/resources/UserResource.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/user-api/src/main/java/br/com/ctfera/user_api/services/exceptions/ObjectNotFoundException.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/user-api/src/main/java/br/com/ctfera/user_api/services/exceptions/ObjectNotFoundException.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/user-api/src/main/java/br/com/ctfera/user_api/resources/exceptions/ResourceExceptionHandler.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/user-api/src/main/java/br/com/ctfera/user_api/resources/exceptions/ResourceExceptionHandler.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/user-api/src/main/java/br/com/ctfera/user_api/resources/exceptions/ResourceExceptionHandler.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/user-api/src/main/java/br/com/ctfera/user_api/resources/exceptions/ResourceExceptionHandler.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/user-api/src/main/java/br/com/ctfera/user_api/resources/exceptions/ResourceExceptionHandler.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/user-api/src/main/java/br/com/ctfera/user_api/services/impl/UserServiceImpl.java</url>
+          <line>27</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
