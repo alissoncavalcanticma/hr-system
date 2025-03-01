@@ -6,7 +6,6 @@ import lombok.AllArgsConstructor;
 
 @Getter @Setter
 @AllArgsConstructor
-
 public class Payroll {
     private String workerName;
     private String description;
