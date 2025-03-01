@@ -5,5 +5,6 @@ Projeto de microserviços com Spring Boot
 - Spring Data JPA  //SQL
 - Spring Web //WEB
 - Lombok //Developer Tools
+- H2 //DB test
 
 ### Imagens docker
