@@ -2,12 +2,14 @@ package br.com.ctfera.eureka_server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 @SpringBootApplication
-public class EurekaServerApplication {
+@EnableEurekaServer //Annotationn para ativar o serviço de auto-discovery do Eureka
+public class Main {
 
 	public static void main(String[] args) {
-		SpringApplication.run(EurekaServerApplication.class, args);
+		SpringApplication.run(Main.class, args);
 	}
 
 }
