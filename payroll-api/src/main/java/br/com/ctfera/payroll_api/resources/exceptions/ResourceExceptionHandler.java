@@ -1,6 +1,6 @@
 package br.com.ctfera.payroll_api.resources.exceptions;
 
-import br.com.ctfera.user_api.services.exceptions.ObjectNotFoundException;
+import br.com.ctfera.payroll_api.services.exceptions.ObjectNotFoundException;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

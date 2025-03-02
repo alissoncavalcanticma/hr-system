@@ -2,12 +2,20 @@ package br.com.ctfera.payroll_api.resources.exceptions;
 
 import java.time.LocalDateTime;
 
-//@Getter @Setter
+import lombok.AllArgsConstructor;
+import lombok.Setter;
+import lombok.Getter;
+
+@AllArgsConstructor
+@Getter
+@Setter
 public class StandardError {
     private LocalDateTime timestamp;
     private String error;
     private Integer status;
     private String path;
+
+/*
 
     public StandardError(LocalDateTime timestamp, String error, Integer status, String path) {
         this.timestamp = timestamp;
@@ -47,4 +55,7 @@ public class StandardError {
     public void setPath(String path) {
         this.path = path;
     }
+
+*/
+
 }
