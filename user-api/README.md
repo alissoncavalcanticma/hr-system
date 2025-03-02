@@ -6,5 +6,5 @@ Projeto de microserviços com Spring Boot
 - Spring Web //WEB
 - Lombok //Developer Tools
 - H2 //DB test
+- Eureka-client //Auto-discovery server
 
-### Imagens docker

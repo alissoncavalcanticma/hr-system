@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: eureka-server
+server:
+  port: ${PORT:8761}
+eureka:
+  instance:
+    lease-renewal-interval-in-seconds: 0 #Para evitar msg de erro de renews na interface euraka server
+  client:
+    register-with-eureka: false #Para não se comportar como client e se registrar
+    fetch-registry: false #Para não se comportar como client e se registrar

@@ -5,5 +5,42 @@ Projeto de microserviços com Spring Boot
 - Spring Web //WEB
 - Lombok //Developer Tools
 - OpenFeign //Request
+- Eureka-client //Register service
 
-### Imagens docker
+### Config Eureka client:
+- Incluir dependência no pom.xml:
+  ```xml
+  <dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+  </dependency>
+  ````
+- Incluir gestor de dependencias no pom.xml:
+  ```` xml
+      <dependencyManagement>
+          <dependencies>
+              <dependency>
+                  <groupId>org.springframework.cloud</groupId>
+                  <artifactId>spring-cloud-dependencies</artifactId>
+                  <version>${spring-cloud.version}</version>
+                  <type>pom</type>
+                  <scope>import</scope>
+              </dependency>
+          </dependencies>
+      </dependencyManagement>
+  ````
+  E versão do Spring Cloud nas properties do pom.xml, junto à versão do Java:
+  ```` xml
+  <properties>
+    <java.version>17</java.version>
+    <spring-cloud.version>2024.0.0</spring-cloud.version> <<<----- Apenas essa linha
+  </properties>
+  ````
+- Annotation: @EnableDiscoveryClient na Main class
+- Incluir properties:
+  ```yml 
+  eureka:
+  client:
+    service-url:
+      default-zone: ${EUREKA_URL:http://localhost:8761/eureka}
+  ````
