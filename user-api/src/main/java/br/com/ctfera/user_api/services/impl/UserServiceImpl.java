@@ -18,7 +18,6 @@ import java.util.List;
 
 @Slf4j
 //@NoArgsConstructor(force = true)
-@RequiredArgsConstructor
 @AllArgsConstructor
 @Service
 public class UserServiceImpl implements UserService {

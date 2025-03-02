@@ -8,7 +8,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
-@FeignClient(name = "user-api", url = "http://localhost:8000") //Configurando o client e setando o host que será acessado
+//Com serviço simples, sem LoadBalance:  @FeignClient(name = "user-api", url = "http://localhost:8000") //Configurando o client e setando o host que será acessado
+@FeignClient(name = "user-api") //Configurando o client e setando o host que será acessado
 public interface  UserFeign {
 
     @GetMapping(value = "/api/users/{id}")
