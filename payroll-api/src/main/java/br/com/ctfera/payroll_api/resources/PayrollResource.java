@@ -1,8 +1,6 @@
 package br.com.ctfera.payroll_api.resources;
 
 import br.com.ctfera.payroll_api.domain.Payroll;
-import br.com.ctfera.payroll_api.domain.User;
-import br.com.ctfera.payroll_api.feignClients.UserFeign;
 import br.com.ctfera.payroll_api.services.PayrollService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
