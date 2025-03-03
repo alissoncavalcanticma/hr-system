@@ -1,5 +1,5 @@
 # Projeto Microserviços Java com Spring Boot
-Projeto de microserviços com Spring Boot
+Payroll API
 
 ### Dependências Spring
 - Spring Web //WEB
