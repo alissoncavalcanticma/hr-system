@@ -1,6 +1,5 @@
 # Projeto Microserviços Java com Spring Boot
-Projeto de microserviços com Spring Boot
-Eureka-server
+Eureka-server Auto-discovery
 
 ### Dependências Spring
 - (Spring Cloud Discovery) Eureka server //Server de auto-discovery
