@@ -6,5 +6,7 @@
 - Spring Cloud
 - Open Feign (REST Request service)
 - Eureka Server (Discovery Server)
-- Docker e Docker compose (Criação e registro no docker hub)
 - API Gateway
+- Docker, DockerHub e Docker compose
+- Comunicação de microserviços
+- Error Handler
