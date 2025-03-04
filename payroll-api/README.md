@@ -44,3 +44,31 @@ Payroll API
     service-url:
       default-zone: ${EUREKA_URL:http://localhost:8761/eureka}
   ````
+
+### Criando Dockerfile:
+
+```` dockerfile
+FROM openjdk:17-jdk-slim
+ARG JAR_FILE=target/*.jar
+COPY ${JAR_FILE} app.jar
+ENTRYPOINT ["java", "-jar", "/app.jar"]
+````
+### Gerando a imagem no DockerHub:
+
+Gerando imagem:
+
+    docker build -t alissoncavalcanticma/payroll-api:1.0.0 .
+
+Verificando imagem criada
+
+    docker images
+
+### Rodando imagem criada em container Docker:
+
+    docker container run --name payroll-api -p 8761:8761 alissoncavalcanticma/payroll-api:1.0.0
+
+### Subindo imagem criada para o DockerHub:
+
+    docker login
+
+    docker push alissoncavalcanticma/payroll-api:1.0.0
