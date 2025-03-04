@@ -8,3 +8,31 @@
      ````xml
                   <artifactId>spring-cloud-starter-gateway</artifactId>
      ````
+
+### Criando Dockerfile:
+
+```` dockerfile
+FROM openjdk:17-jdk-slim
+ARG JAR_FILE=target/*.jar
+COPY ${JAR_FILE} app.jar
+ENTRYPOINT ["java", "-jar", "/app.jar"]
+````
+### Gerando a imagem no DockerHub:
+
+Gerando imagem:
+
+    docker build -t alissoncavalcanticma/api-gateway:1.0.0 .
+
+Verificando imagem criada
+
+    docker images
+
+### Rodando imagem criada em container Docker:
+
+    docker container run --name api-gateway -p 8761:8761 alissoncavalcanticma/api-gateway:1.0.0
+
+### Subindo imagem criada para o DockerHub:
+
+    docker login
+
+    docker push alissoncavalcanticma/api-gateway:1.0.0
