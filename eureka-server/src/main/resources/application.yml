@@ -5,7 +5,7 @@ server:
   port: ${PORT:8761}
 eureka:
   instance:
-    lease-renewal-interval-in-seconds: 0 #Para evitar msg de erro de renews na interface euraka server
+    lease-renewal-interval-in-seconds: 0
   client:
-    register-with-eureka: false #Para não se comportar como client e se registrar
-    fetch-registry: false #Para não se comportar como client e se registrar
+    register-with-eureka: false
+    fetch-registry: false
