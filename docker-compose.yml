@@ -1,0 +1,57 @@
+services:
+  eureka-server:
+    image: alissoncavalcanticma/eureka-server:1.0.1
+    container_name: eureka-server
+    ports:
+      - "8761:8761"
+    expose:
+      - "8761"
+    environment:
+      - PORT=8761
+    networks:
+      - hr-system
+  
+  api-gateway:
+    image: alissoncavalcanticma/api-gateway:1.0.1
+    container_name: api-gateway
+    ports:
+      - "8765:8765"
+    depends_on:
+      - eureka-server
+    environment:
+      - PORT=8765
+      - EUREKA_URL=http://eureka-server:8761/eureka
+    networks:
+      - hr-system
+  
+  user-api:
+    image: alissoncavalcanticma/user-api:1.0.1
+    ports:
+      - "0:8000"  # Atribui uma porta aleatória do host
+    depends_on:
+      - eureka-server
+      - api-gateway
+    environment:
+      - PORT=8000
+      - EUREKA_URL=http://eureka-server:8761/eureka
+    networks:
+      - hr-system
+    
+  payroll-api:
+    image: alissoncavalcanticma/payroll-api:1.0.0
+    container_name: payroll-api
+    ports:
+      - "8100:8100"
+    depends_on:
+      - eureka-server
+      - api-gateway
+      - user-api
+    environment:
+      - PORT=8100
+      - EUREKA_URL=http://eureka-server:8761/eureka
+    networks:
+      - hr-system
+
+networks:
+  hr-system:
+    driver: bridge
