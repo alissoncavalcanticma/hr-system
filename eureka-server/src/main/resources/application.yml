@@ -6,6 +6,8 @@ server:
 eureka:
   instance:
     lease-renewal-interval-in-seconds: 0
+  server:
+    eviction-interval-timer-in-ms: 5000
   client:
     register-with-eureka: false
     fetch-registry: false
