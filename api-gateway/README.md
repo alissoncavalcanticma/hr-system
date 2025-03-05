@@ -3,11 +3,23 @@
 
 ### Dependências Spring
 - Gateway (Spring Cloud Routing) // API Gateway
-- Eureka Discovery Client (Spring Cloud Discovery) //Register service
-  - Usar >spring-cloud-starter-gateway, e não >spring-cloud-starter-gateway-mvc
-     ````xml
-                  <artifactId>spring-cloud-starter-gateway</artifactId>
-     ````
+  - Eureka Discovery Client (Spring Cloud Discovery) //Register service
+    - Usar >spring-cloud-starter-gateway, e não >spring-cloud-starter-gateway-mvc
+       ````xml
+       <artifactId>spring-cloud-starter-gateway</artifactId>
+       ````
+
+#### Outras dependências:
+      ````xml
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <atifactId>spring-cloud-starter-loadbalancer</artifactId>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-circuitbreaker-resilience4j</artifactId>	
+      </dependency>    
+      ````
 
 ### Criando Dockerfile:
 
